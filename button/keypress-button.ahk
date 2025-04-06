@@ -9,7 +9,7 @@ global modGui := Gui("+AlwaysOnTop +ToolWindow +Resize","For OBS")
 modGui.BackColor := "c00b140"
 modGui.SetFont("s20 bold cBlack","Arial Rounded MT Bold")
 
-textElementA := modGui.Add("button", "Left x10  y10 w0 w80 -Wrap +E0x40000", "")
+textElementA := modGui.Add("button", "Left x10  y10 w0 w80 -Wrap", "")
 textElementB := modGui.Add("button", "Left x10  y10 w0 w38 -Wrap", "")
 textElementC := modGui.Add("button", "Left x100 y10 w0 w38 -Wrap", "") 
 
