@@ -19,7 +19,7 @@ CheckKeys() {
 
     keys := ""
 
-    ; Check CTRL, ALT & SHIFT
+  ; Check CTRL, ALT & SHIFT
     if GetKeyState("Ctrl", "P")
        keys .= "Ctrl "
     if GetKeyState("Alt", "P")
@@ -28,14 +28,14 @@ CheckKeys() {
        keys .= "Shift "
 
 
-    ; Check A–Z
+  ; Check A–Z
     loop 26 {
         char := Chr(64 + A_Index)  ; Chr(65)="A" to Chr(90)="Z"
         if GetKeyState(char, "P")
            keys .= char
     }
 
-    ; Check 0–9
+  ; Check 0–9
     loop 10 {
         num := Mod(A_Index, 10)  ; 1–10 → 1–9,0
         if GetKeyState(num, "P")
@@ -46,17 +46,17 @@ CheckKeys() {
         lastKeys := keys
 
 
-		; Adjust width of window if modifier keys are pressed
-		wdt := 20
-
-		if GetKeyState("Alt") = 1 
-		   wdt := wdt + 50
-		if GetKeyState("Ctrl") = 1 
-		   wdt := wdt + 60
-		if GetKeyState("Shift") = 1 
-		   wdt := wdt + 80
-
-		textElement.Move(,,wdt)
+      ; Adjust width of window if modifier keys are pressed
+	wdt := 20
+	
+	if GetKeyState("Alt")
+	   wdt := wdt + 50
+	if GetKeyState("Ctrl") 
+	   wdt := wdt + 60
+	if GetKeyState("Shift") 
+	   wdt := wdt + 80
+	
+	textElement.Move(,,wdt)
 
 
 
