@@ -4,14 +4,19 @@ Displays whatever keys are currently pressed in a floating window. The window ca
 
 If using for OBS, apply a chroma key to remove the green background.
 
+<br><br>
 
 # Description
 Asked AI to generate a description for me about what the code does.
 
 
+🤖⬇️
+
+<br><br>
+
 This AutoHotkey v2 script is specifically designed for use with OBS (Open Broadcaster Software) for streaming or recording purposes. Here's a detailed breakdown:
 
-### Key Differences from Previous Version:
+### Key Differences from Borderless Version:
 1. **Visual Design Changes**:
    - Background color is now a teal-like color (`c00b140`)
    - Uses "Arial Rounded MT Bold" font with black text
