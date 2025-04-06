@@ -5,7 +5,7 @@ Displays whatever keys are currently pressed in a floating window. The window ca
 If using for OBS, apply a chroma key to remove the green background.
 
 
-#Description
+# Description
 Asked AI to generate a description for me about what the code does.
 
 

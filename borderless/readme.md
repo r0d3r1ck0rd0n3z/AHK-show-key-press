@@ -3,7 +3,7 @@
 AHK script that displays whatever key is currently pressed in a floating borderless window. The window can be dragged to any position.
 
 
-#Description
+# Description
 Asked AI to generate a description for me about what the code does.
 
 
