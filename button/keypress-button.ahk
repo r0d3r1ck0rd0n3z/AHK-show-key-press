@@ -47,17 +47,17 @@ CheckKeys() {
 
     if (keysA != lastKeys or keysB != lastKeys) {
         
-		if 	keysA = ""
-			lastKeys := keysB
-		if 	keysB = ""
-			lastKeys := keysA
+	if 	keysA = ""
+		lastKeys := keysB
+	if 	keysB = ""
+		lastKeys := keysA
 
 
         if (keysA != "" or keysB != "") {
-            textElementA.Text := RTrim(keysA)
-			textElementB.Text := RTrim(keysB)
-			textElementC.Text := RTrim(keysB)
-            ShowOverlay()
+            	textElementA.Text := RTrim(keysA)
+		textElementB.Text := RTrim(keysB)
+		textElementC.Text := RTrim(keysB)
+            	ShowOverlay()
         } else {
             HideOverlay()
         }
@@ -71,13 +71,13 @@ ShowOverlay() {
 	if 	( GetKeyState("Alt") or GetKeyState("Ctrl") or GetKeyState("Shift") ) {
 		ControlShow textElementA
 		ControlHide textElementB
-		if 	textElementC.Text != "" 
-			ControlShow textElementC 
-		if 	textElementC.Text = "" 
-			ControlHide textElementC 
+		if textElementC.Text != "" 
+		   ControlShow textElementC 
+		if textElementC.Text = "" 
+		   ControlHide textElementC 
 		}
 
-	else {
+	else 	{
 		ControlHide textElementA
 		ControlShow textElementB
 		ControlHide textElementC
@@ -86,7 +86,7 @@ ShowOverlay() {
 }
 
 HideOverlay() {
-    global textElementA, textElementB, textElementC
+    	global textElementA, textElementB, textElementC
 	ControlHide textElementA
 	ControlHide textElementB
 	ControlHide textElementC
